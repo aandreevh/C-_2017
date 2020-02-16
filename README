@@ -1,0 +1,41 @@
+Project : Database
+Project Manager: Andrey Andreev 
+Faculty Number:  62173
+
+The main target of this project is to show good practices in OOP by showing well designed api architecture with good code encapsulation. 
+
+namespace API:
+All the classes that are used are implemented in a namespace API as for better code encapsulation
+
+classes :
+
+DatabaseManager:
+The class that connects CLI with the database API.
+
+Database:
+This class is used as a container for tables.
+
+Table:
+This class is used as a container for  rows all following the table's schema.
+
+Row:
+This class is used as a container for cells.
+
+Cell:
+This class is used as a primitive database value.
+
+Mixed:
+A flexible primitive supporting int,float and string conversion in one.
+
+
+Serializable:
+This abstract class offers interface for seriallization used in Table,Row,Cell classes for serialization to string value.
+
+Query (Unary/Binary):
+This abstract class offers a model for quering in one or between two tables. All the query classes are encapsulated in namespace Queries.
+
+Exceptions:
+
+All classes use exceptions to indicate different API errors. All exception classes are encapsulated in namespace Exception.
+
+
